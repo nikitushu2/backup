@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Cars</title>
+</head>
+<body>
+    <div id="blue1"></div>
+    <header>
+        <p class="title"><b>Search car by license number</b></p>
+        <input type="text" id="search" name="search">
+        <ul id="search-result"></ul>
+        <p id="notFound"></p>
+    </header>
+    <div id="blue2"></div>
+    <main>
+        <div id="form">
+        <p class="title"><b>Insert car data</b></p>
+        <form id="car-form">
+            <p class="input-title">Plate</p>
+            <input type="text" id="plate" name="plate" class="input"><br>
+            
+            <p class="input-title">Maker</p>
+            <input type="text" id="maker" name="maker" class="input"><br>
+
+            <p class="input-title">Model</p>
+            <input type="text" id="model" name="model" class="input"><br>
+
+            <p class="input-title">Owner</p>
+            <input type="text" id="owner" name="owner" class="input"><br>
+
+            <p class="input-title">Price</p>
+            <input type="text" id="price" name="price" class="input"><br>
+
+            <p class="input-title">Color</p>
+            <input type="text" id="color" name="color" class="input"><br>
+
+            <p class="input-title">Year</p>
+            <input type="text" id="year" name="year" class="input"><br>
+
+            <input type="submit" id="button" name="submit">
+          </form>
+        </div>
+          <table>
+            <thead>
+                <tr>
+                    <th>License</th>
+                    <th>Maker</th>
+                    <th>Model</th>
+                    <th>Owner</th>
+                    <th>Original Price</th>
+                    <th>Color</th>
+                    <th>Year</th>
+                    <th>Discounted Price</th>
+                </tr>
+            </thead>
+            <tbody id="table">
+            </tbody>
+          </table>
+    </main>
+    <div id="blue3"></div>
+    <script src="./main.js"></script>
+</body>
+</html>
