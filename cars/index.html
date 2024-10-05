@@ -9,10 +9,11 @@
 <body>
     <div id="blue1"></div>
     <header>
-        <p class="title"><b>Search car by license number</b></p>
-        <input type="text" id="search" name="search">
-        <ul id="search-result"></ul>
-        <p id="notFound"></p>
+        <div id="car">
+        <!--<p class="title"><b>Search car by license number</b></p>-->
+        <input type="text" id="search" name="search" placeholder="Search...">
+        </div>
+        <div class="searchResult"></div>
     </header>
     <div id="blue2"></div>
     <main>
@@ -35,7 +36,7 @@
             <input type="text" id="price" name="price" class="input"><br>
 
             <p class="input-title">Color</p>
-            <input type="text" id="color" name="color" class="input"><br>
+            <input type="color" id="color" name="color" class="input"><br>
 
             <p class="input-title">Year</p>
             <input type="text" id="year" name="year" class="input"><br>
@@ -54,6 +55,7 @@
                     <th>Color</th>
                     <th>Year</th>
                     <th>Discounted Price</th>
+                    <th>X</th>
                 </tr>
             </thead>
             <tbody id="table">

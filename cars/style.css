@@ -23,16 +23,11 @@ header {
 main {
     display: flex;
     align-items: flex-start;
+    justify-content: center;
+    gap: 200px;
 } 
 
-#form {
-    flex: 1;
-}
 
-table {
-    flex: 2;
-    margin-right: 10px;
-}
 
 .title {
     margin: 20px 10px;
@@ -57,7 +52,8 @@ main {
     padding: 40px 0;
 }
 
-#button {
+#button,
+button {
     margin: 10px 10px;
     background-color: rgb(107, 107, 255);
     height: 30px;
@@ -80,4 +76,34 @@ th {
 
 table {
     margin: 20px 10px;
+}
+
+#car {
+    background-image: url(car.png);
+    background-size: contain;
+    background-position: center;
+    height: 400px;
+    background-repeat: no-repeat;
+    flex: 1;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 300px;
+}
+
+#search {
+    margin-left: 234px;
+    margin-top: 243px;
+    width: 100px;
+}
+
+.searchResult {
+    flex: 1;
+}
+
+#color {
+    width: 197px;
 }
